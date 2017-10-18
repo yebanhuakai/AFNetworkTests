@@ -10,6 +10,7 @@
 //#import "AFNetworkReachabilityManager.h"
 //#import "VTMagic.h"
 #import "AFHTTPSessionManager.h"
+#import "SHY_HttpRequest.h"
 
 @interface ViewController ()
 
@@ -26,21 +27,14 @@
 
 - (void)requestNews {
     
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    
-    NSDictionary *dict = nil;
-    
     NSString *urlStr = @"https://mapp.jrj.com.cn/json/news/getListNews?date=0&size=3&d=b";
-    
-    manager.responseSerializer.acceptableContentTypes = [manager.responseSerializer.acceptableContentTypes setByAddingObject:@"text/html"];
-    
-    [manager GET:urlStr parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+
+    [SHY_HttpRequest requestGetWithUrl:urlStr parameters:nil success:^(id responseObject) {
         //
         NSDictionary *dic = responseObject;
         NSLog(@"%@", dic);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSError *error) {
         //
-        NSLog(@"%@", error);
     }];
 }
 
