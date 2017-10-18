@@ -14,6 +14,8 @@
 		4587B42F1F974A2C009F7869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4587B42E1F974A2C009F7869 /* Assets.xcassets */; };
 		4587B4321F974A2C009F7869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4587B4301F974A2C009F7869 /* LaunchScreen.storyboard */; };
 		4587B4351F974A2C009F7869 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4587B4341F974A2C009F7869 /* main.m */; };
+		45B39CBE1F97A0F10083DEE8 /* NSArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B39CBB1F97A0F10083DEE8 /* NSArray+Extension.m */; };
+		45B39CBF1F97A0F10083DEE8 /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B39CBC1F97A0F10083DEE8 /* NSDictionary+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,11 @@
 		4587B4311F974A2C009F7869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4587B4331F974A2C009F7869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4587B4341F974A2C009F7869 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45B39CB11F9799AB0083DEE8 /* AFNetwork-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFNetwork-Prefix.pch"; sourceTree = "<group>"; };
+		45B39CBA1F97A0F10083DEE8 /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
+		45B39CBB1F97A0F10083DEE8 /* NSArray+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extension.m"; sourceTree = "<group>"; };
+		45B39CBC1F97A0F10083DEE8 /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
+		45B39CBD1F97A0F10083DEE8 /* NSArray+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extension.h"; sourceTree = "<group>"; };
 		820A2C3109463B67A952C0B5 /* Pods-AFNetworkTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworkTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AFNetworkTest/Pods-AFNetworkTest.debug.xcconfig"; sourceTree = "<group>"; };
 		A38C7B2575B14C1DA3EA8262 /* Pods-AFNetworkTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworkTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AFNetworkTest/Pods-AFNetworkTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,8 +81,29 @@
 				4587B4301F974A2C009F7869 /* LaunchScreen.storyboard */,
 				4587B4331F974A2C009F7869 /* Info.plist */,
 				4587B4341F974A2C009F7869 /* main.m */,
+				45B39CB11F9799AB0083DEE8 /* AFNetwork-Prefix.pch */,
+				45B39CC01F97A14E0083DEE8 /* HttpRequest */,
+				45B39CB91F97A0F10083DEE8 /* ThirdTools */,
 			);
 			path = AFNetworkTest;
+			sourceTree = "<group>";
+		};
+		45B39CB91F97A0F10083DEE8 /* ThirdTools */ = {
+			isa = PBXGroup;
+			children = (
+				45B39CBD1F97A0F10083DEE8 /* NSArray+Extension.h */,
+				45B39CBB1F97A0F10083DEE8 /* NSArray+Extension.m */,
+				45B39CBA1F97A0F10083DEE8 /* NSDictionary+Extension.h */,
+				45B39CBC1F97A0F10083DEE8 /* NSDictionary+Extension.m */,
+			);
+			path = ThirdTools;
+			sourceTree = "<group>";
+		};
+		45B39CC01F97A14E0083DEE8 /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HttpRequest;
 			sourceTree = "<group>";
 		};
 		9DA5DF00D5C5356F383369B1 /* Pods */ = {
@@ -217,8 +245,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45B39CBE1F97A0F10083DEE8 /* NSArray+Extension.m in Sources */,
 				4587B42A1F974A2C009F7869 /* ViewController.m in Sources */,
 				4587B4351F974A2C009F7869 /* main.m in Sources */,
+				45B39CBF1F97A0F10083DEE8 /* NSDictionary+Extension.m in Sources */,
 				4587B4271F974A2C009F7869 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +386,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FKVD858LHT;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AFNetworkTest/AFNetwork-Prefix.pch";
 				INFOPLIST_FILE = AFNetworkTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Labearch.AFNetworkTest;
@@ -372,6 +403,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FKVD858LHT;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AFNetworkTest/AFNetwork-Prefix.pch";
 				INFOPLIST_FILE = AFNetworkTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Labearch.AFNetworkTest;

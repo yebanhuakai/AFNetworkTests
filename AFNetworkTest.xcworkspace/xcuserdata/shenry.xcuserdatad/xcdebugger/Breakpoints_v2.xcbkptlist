@@ -9,29 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AFNetworkTest/ViewController.m"
-            timestampString = "530027296.264757"
+            filePath = "AFNetworkTest/NSDictionary+Extension.m"
+            timestampString = "530030603.31926"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "-getNews"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AFNetworkTest/ViewController.m"
-            timestampString = "530027296.265582"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "-getNews"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "-descriptionWithLocale:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
